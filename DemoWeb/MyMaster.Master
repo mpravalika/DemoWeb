@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMaster.master.cs" Inherits="DemoWeb.MyMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="style/StyleSheet1.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            position: fixed;
+            left: 230px;
+            top: 141px;
+            height: 80%;
+            width: 76%;
+        }
+        .auto-style2 {
+            position: fixed;
+            left: 45px;
+            top: 21px;
+            width: 90%;
+            height: 115px;
+        }
+        .auto-style3 {
+            position: fixed;
+            left:-123px;
+            top: 145px;
+            width: 199px;
+            height:147px;
+            margin-left: 147px;
+        }
+        .auto-style4 {
+            position: absolute;
+            width: 99%;
+            height: 90%;
+            left: 6px;
+            top: 7px;
+            margin-left: 0px;
+        }
+        .auto-style5 {
+            height: 36px;
+            width: 199px;
+        }
+        </style>
+</head>
+<body style="background-color:#FFFFFF;">
+    <div style="background-color: #FFFFFF" class="auto-style2">
+        &nbsp;<img src="Images/img.jpg" class="auto-style4"/></div>
+    <div style="background-color: #CCCCFF; " class="auto-style3">
+       <ul class="auto-style5" style="background-color: #008080">
+         <li><a href="Home.aspx">Home</a></li>
+         <li><a href="About Us.aspx">AboutUs</a></li>
+         <li><a href="Services.aspx">Services</a></li>
+         <li><a href="Login.aspx">Login</a></li>
+      </ul>
+
+    </div>
+
+    <div style="background-color: #C0C0C0" class="auto-style1">
+    <form id="form1" runat="server">
+        <div>
+              <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    </div>
+    &nbsp;
+</body>
+</html>
